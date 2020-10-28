@@ -7,7 +7,7 @@ class Question
 
 // declaring the variables needed.
 
-Scanner s=new Scanner(System.in);
+Scanner sc=new Scanner(System.in);
 String question,option1,option2,option3,option4;
 int correctAnswer, userAnswer; 
 
@@ -22,7 +22,7 @@ System.out.println("\n3. "+option3);
 System.out.println("\n4. "+option4); 
 System.out.print("\nPlease choose an option : "); 
 
-userAnswer=s.nextInt();
+userAnswer=sc.nextInt();
 if(userAnswer==correctAnswer)
 {
 return true;
@@ -43,7 +43,7 @@ int score=0,Answered=0,wronglyAnswered=0;
 // getting player details.
 public void getDetails()
 {
-System.out.print("\nEnter Player Name : ");
+System.out.print("\nEnter the Player Name : ");
 Name=sc.next();
 }
 }
@@ -61,18 +61,19 @@ Question[] questions=new Question[5];
 Player player=new Player();
 
 // question and answer dataset.
+
 String[] questionsdata={"Java is a ","JVM stands for ","How many components of a class java?","What are the types of access modifiers?", "What are the looping statements in java?"};
     
 String[] options1={"Object-oriented",
-"Java Visual Machine","2","Public", "break, continue,go"};
+"Java Visual Machine","Two","Public", "break, continue,go"};
     
-String[] options2={"Procedural","Java Virtual Machine","4","Private",
+String[] options2={"Procedural","Java Virtual Machine","Four","Private",
 "for,if,if-else"};
     
-String[] options3={"Functional","Java Visualisation Machine","3",
+String[] options3={"Functional","Java Visualisation Machine","Three",
 "Protected","for,whie,do-while"};
 
-String[] options4={"Scripting","None of the above","5","All the above","goto,jump,break"};
+String[] options4={"Scripting","None of the above","Five","All the above","goto,jump,break"};
     
 int[] answers={1,2,3,4,3};
     
@@ -141,5 +142,70 @@ game.initGame();
 game.play();
 }
 }
+
+ 
+Output:
+
+Enter the Player Name : Farzana
+
+Java is a 
+1.Object-oriented
+2.Procedural
+3.Functional
+4.Scripting
+
+Please choose an option : 1
+Cheers,correct Answer!!!
+
+JVM stands for 
+1.Java Visual Machine
+2.Java Virtual Machine
+3.Java Visualisation Machine
+4.None of the above
+
+Please choose an option : 2
+Cheers,correct Answer!!!
+
+How many components of a class java?
+1.Two
+2.Four
+3.Three
+4.Five
+
+Please choose an option : 3
+Cheers,correct Answer!!!
+
+What are the types of access modifiers?
+1.Public
+2.Private
+3.Protected
+4.All the above
+
+Please choose an option : 4
+Cheers,correct Answer!!!
+
+What are the looping statements in java?
+1.break,continue,go  
+2.for,if,if-else
+3.for,whie,do-while
+4.goto,jump,break
+
+Please choose an option : 3
+Cheers,correct Answer!!!
+
+
+SCORE BOARD...
+Player Name = Farzana
+Player Score = 50
+No. of questions Player correctly Answered = 5
+No. of questions Player wrongly Answered = 0
+
+
+
+
+
+    
+    
+
 
     
