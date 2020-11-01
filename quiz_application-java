@@ -1,4 +1,4 @@
-import java.util.*; 
+import java.util.Scanner; 
 
 // creating a class named question
   
@@ -129,7 +129,7 @@ System.out.println("\nNo. of questions Player wrongly Answered = "+player.wrongl
 
 // main class of the program named QuizApp.
 
-public class QuizApp  
+public class Main
 {
 // main function.
 
